@@ -1,7 +1,115 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree . 
-*/
+body{
+	background-color: #F0F0F0;
+}
+
+.header-main{
+	line-height: 1.3333em;
+    margin: 0 auto;
+    width: 950px;
+}
+
+.header-row{
+	margin-top: 20px;
+	height: 150px;
+	background: url("../images/header.png") no-repeat bottom;
+	background-size: 100%;
+}
+
+.title-row{
+	/*height: 100px;*/
+	height: 40px;
+	padding: 30px;
+	font-size: 4em;
+	color: #FFFFFF;
+}
+
+.main{
+	margin: 10px 0;
+	padding: 10px;
+	background: #FFFFFF;
+	border-bottom: 5px solid #00FF00;
+}
+
+/* Navigation */
+header nav ul {
+	height: 50px;
+	padding: 0;
+	list-style-type: none;
+}
+
+header nav ul li {
+	background: url("../images/menu_item.png") repeat-x scroll left top transparent;
+	display: inline-block;
+	float: right;
+	margin-right: 1px;
+	width: 185px;
+	height: 50px;
+	text-align: left;
+}
+
+header nav ul li:hover {
+	background-position: left bottom;
+}
+
+header nav a, header nav a:visited {
+	text-decoration: none;
+	display: block;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.4em;
+	padding: 15px 0 14px 19px;
+	text-transform: uppercase;
+}
+
+header nav a:hover {
+	color: #000000;
+}
+
+/* Round corners */
+.round {
+	-moz-border-radius: 	10px;
+	-webkit-border-radius: 	10px;
+	border-radius: 			10px;
+}
+
+/* Social Banner */
+section.social{
+	margin: 10px 0;
+	background: #FFFFFF;
+	height: 60px;
+	border-bottom: 5px solid #0000FF;
+}
+
+.social-media{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 87%;
+	
+}
+
+.social-media img{
+	width: 48px;
+	margin-top: 4px;
+}
+
+.social-media a{
+	text-decoration: none;
+	font-size: 26px;
+	margin: 0 50px;
+}
+
+.social-media .facebook{
+	vertical-align: middle;
+}
+
+.mexico{
+	float: left;
+	padding: 6px 0 0 10px;
+}
+
+.china{
+	float: right;
+	padding: 6px 10px 0 0;
+}
